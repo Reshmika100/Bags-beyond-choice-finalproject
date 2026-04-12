@@ -1,0 +1,118 @@
+:root {
+    --primary: #543D2E;   /* Dark Brown */
+    --accent: #9C5D31;    /* Rust Orange */
+    --light-tan: #D6BEA8; /* Light Sand */
+    --bg-off-white: #DOC9C9; /* Muted Grey-Pink */
+    --text-color: #525B59; /* Slate Grey */
+}
+
+body {
+    margin: 0;
+    font-family: 'Arvo', serif;
+    color: var(--text-color);
+    background-color: #fcfcfc;
+}
+
+h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+.logo { font-family: 'Pacifico', cursive; font-size: 1.8rem; color: var(--accent); }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul { display: flex; list-style: none; }
+nav ul li a { text-decoration: none; color: var(--primary); margin-left: 20px; font-weight: bold; }
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/1200x800'); /* Replace with a high-res ethnic pattern image */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+
+.btn {
+    background-color: var(--accent);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Oswald';
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover { background-color: var(--primary); }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 5% ;
+}
+
+.product-card {
+    background: var(--bg-off-white);
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.img-placeholder {
+    height: 200px;
+    background: var(--light-tan);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pacifico';
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-btn { float: right; cursor: pointer; font-size: 24px; }
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    border: 1px solid var(--light-tan);
+}
