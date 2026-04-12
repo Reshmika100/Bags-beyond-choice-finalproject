@@ -1,24 +1,36 @@
-// Trigger popup after 2.5 seconds
-window.onload = function() {
-    setTimeout(function() {
-        document.getElementById('signup-popup').style.display = 'block';
-    }, 2500);
-};
+const themeToggle = document.querySelector('[data-theme-toggle]');
+const html = document.documentElement;
+const openButtons = document.querySelectorAll('[data-open-signup]');
+const closeButton = document.querySelector('[data-close-signup]');
+const popup = document.querySelector('.popup');
+const backdrop = document.querySelector('.popup-backdrop');
+
+let currentTheme = 'light';
+
+themeToggle?.addEventListener('click', () => {
+  currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+  html.setAttribute('data-theme', currentTheme);
+});
+
+function openPopup() {
+  popup.hidden = false;
+  backdrop.hidden = false;
+}
 
 function closePopup() {
-    document.getElementById('signup-popup').style.display = 'none';
+  popup.hidden = true;
+  backdrop.hidden = true;
 }
 
-// Close if clicked outside
-window.onclick = function(event) {
-    let modal = document.getElementById('signup-popup');
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+openButtons.forEach(button => {
+  button.addEventListener('click', openPopup);
+});
 
-document.getElementById('popup-form').onsubmit = function(e) {
-    e.preventDefault();
-    alert("Welcome! Check your email for a 10% discount.");
+closeButton?.addEventListener('click', closePopup);
+backdrop?.addEventListener('click', closePopup);
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !popup.hidden) {
     closePopup();
-};
+  }
+});
