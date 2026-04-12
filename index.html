@@ -3,56 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bags Beyond Choice | Handcrafted Ethnic Elegance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Oswald:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Bags Beyond Choice | Handcrafted Elegance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Oswald:wght@300;500&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="offer-popup" class="popup-overlay">
-        <div class="popup-content">
-            <span class="close-btn" onclick="togglePopup()">&times;</span>
-            <h2 class="brand-font">Join the Sisterhood</h2>
-            <p>Get 10% off your first handcrafted bag. Sign up for exclusive ethnic print drops!</p>
-            <form id="signup-form">
-                <input type="email" placeholder="Email Address" required>
-                <button type="submit" class="btn">Claim My Offer</button>
+    <div id="signup-popup" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 class="brand-font">Join Our Community</h2>
+            <p>Get early access to our new ethnic print collections and a 10% discount on your first order.</p>
+            <form id="popup-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-dark">Sign Up</button>
             </form>
         </div>
     </div>
 
-    <header>
-        <nav>
+    <nav class="navbar">
+        <div class="nav-container">
             <div class="logo brand-font">Bags Beyond Choice</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="#about">Our Story</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-menu">
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#contact">Inquire</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header class="hero-phool">
+        <div class="hero-inner">
+            <h1>Handmade with Heritage</h1>
+            <p>Experience the soul of Indian ethnic prints in every stitch.</p>
+            <a href="#shop" class="btn-outline">Discover More</a>
+        </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <h1>Handmade Indian Ethnic Prints</h1>
-            <p>Sustainable, Women-Led, and Affordable Quality.</p>
-            <a href="#collection" class="btn">Shop the Collection</a>
+    <section id="shop" class="category-section">
+        <div class="container">
+            <h2 class="section-title">The Collection</h2>
+            <div class="phool-grid">
+                <div class="cat-item"><h3>Tote Bags</h3></div>
+                <div class="cat-item"><h3>Travel Bags</h3></div>
+                <div class="cat-item"><h3>Sling Bags</h3></div>
+                <div class="cat-item"><h3>Wallets</h3></div>
+                <div class="cat-item"><h3>Exclusive Combos</h3></div>
+                <div class="cat-item"><h3>Laptop Totes</h3></div>
+            </div>
         </div>
     </section>
 
-    <section id="collection" class="section">
-        <h2 class="section-title">Explore Our Range</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=500')"></div>
-                <h3>Ethnic Tote Bags</h3>
-                <p>Reliable & Spacious</p>
-            </div>
-            <div class="card">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=500')"></div>
-                <h3>Custom Slings</h3>
-                <p>Perfect for Every Day</p>
-            </div>
-            <div class="card">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1566150
+    <section id="story" class="minimal-about">
+        <div class="small-container">
+            <span>Women-Led Initiative</span>
+            <h2>Conscious Craftsmanship</h2>
+            <p>Bags Beyond Choice celebrates Indian ethnic prints through reliable, high-quality products designed for the modern woman.</p>
+        </div>
+    </section>
+
+    <footer class="footer-minimal">
+        <p>&copy; 2026 Bags Beyond Choice | Follow us on Instagram for updates.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
