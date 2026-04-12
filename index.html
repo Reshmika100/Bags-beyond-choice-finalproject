@@ -1,71 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bags Beyond Choice | Handcrafted Elegance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Oswald:wght@300;500&family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bags Beyond Choice</title>
+  <meta name="description" content="Bags Beyond Choice — thoughtfully curated bags for work, travel, and everyday style." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Oswald:wght@300;400;500;600;700&family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <div id="signup-popup" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2 class="brand-font">Join Our Community</h2>
-            <p>Get early access to our new ethnic print collections and a 10% discount on your first order.</p>
-            <form id="popup-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="btn-dark">Sign Up</button>
-            </form>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <div class="brand-mark">
+          <img src="image.jpg" alt="Bags Beyond Choice logo" width="60" height="60">
         </div>
+        <div class="brand-text">
+          <strong>Bags Beyond Choice</strong>
+          <span>Indian prints meets everyday utility</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#categories">Categories</a>
+        <a href="#signature">Style Story</a>
+        <a href="#gallery">Instagram Pics</a>
+        <a href="#signup">Sign Up</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle theme" data-theme-toggle>
+          <span aria-hidden="true">◐</span>
+        </button>
+        <button class="menu-btn" type="button" aria-label="Open menu">☰</button>
+      </div>
     </div>
+  </header>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo brand-font">Bags Beyond Choice</div>
-            <ul class="nav-menu">
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#contact">Inquire</a></li>
-            </ul>
-        </div>
-    </nav>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Handmade ethnic bag studio</span>
+          <div class="script"></div>
+          <h1>Signature everyday carry</h1>
+          <p>
+            Whether you’re heading to the office, a weekend getaway, or a casual brunch, your choice of accessory defines your look. At Bags Beyond Choice, we curate a collection of premium bags designed to blend timeless elegance with modern functionality. Every piece is crafted with attention to detail, ensuring that your style is never compromised for utility.
+          </p>
 
-    <header class="hero-phool">
-        <div class="hero-inner">
-            <h1>Handmade with Heritage</h1>
-            <p>Experience the soul of Indian ethnic prints in every stitch.</p>
-            <a href="#shop" class="btn-outline">Discover More</a>
-        </div>
-    </header>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#categories">Explore collection</a>
+          </div>
 
-    <section id="shop" class="category-section">
-        <div class="container">
-            <h2 class="section-title">The Collection</h2>
-            <div class="phool-grid">
-                <div class="cat-item"><h3>Tote Bags</h3></div>
-                <div class="cat-item"><h3>Travel Bags</h3></div>
-                <div class="cat-item"><h3>Sling Bags</h3></div>
-                <div class="cat-item"><h3>Wallets</h3></div>
-                <div class="cat-item"><h3>Exclusive Combos</h3></div>
-                <div class="cat-item"><h3>Laptop Totes</h3></div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>11,000+</strong>
+              <span>Instagram community</span>
             </div>
+            <div class="stat">
+              <strong>6</strong>
+              <span>Core bag categories</span>
+            </div>
+            <div class="stat">
+              <strong>Handmade</strong>
+              <span>Craft-first finishing</span>
+            </div>
+          </div>
         </div>
+
+        <div class="hero-card">
+          <img src="https://picsum.photos/seed/bag-hero/900/1100" alt="Featured bags display" width="900" height="1100">
+          <div class="floating-note">
+            <strong>Everyday utility</strong>
+            <span>Designed to carry heritage, style, and function together.</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="story" class="minimal-about">
-        <div class="small-container">
-            <span>Women-Led Initiative</span>
-            <h2>Conscious Craftsmanship</h2>
-            <p>Bags Beyond Choice celebrates Indian ethnic prints through reliable, high-quality products designed for the modern woman.</p>
+    <section id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="script">Collections</div>
+            <h2>Collections categories</h2>
+          </div>
+          <p>From everyday essentials to statement pieces, our collection spans a diverse range of categories tailored for every lifestyle.</p>
         </div>
+
+        <div class="category-grid">
+          <article class="category-card">
+            <img src="https://picsum.photos/seed/laptop-bags/800/600" alt="Laptop bags" width="800" height="600" loading="lazy">
+            <div class="category-copy">
+              <div class="category-index">01</div>
+              <h3>Laptop bags</h3>
+              <p>Structured daily companions for college, office, and professional travel needs.</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="https://picsum.photos/seed/tote-bags/800/600" alt="Tote bags" width="800" height="600" loading="lazy">
+            <div class="category-copy">
+              <div class="category-index">02</div>
+              <h3>Tote bags</h3>
+              <p>Stylish, spacious, and easy to pair with everyday outfits and shopping plans.</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="https://picsum.photos/seed/sling-bags/800/600" alt="Sling bags" width="800" height="600" loading="lazy">
+            <div class="category-copy">
+              <div class="category-index">03</div>
+              <h3>Sling bags</h3>
+              <p>Compact essentials made for quick outings, casual styling, and effortless comfort.</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="https://picsum.photos/seed/travel-bags/800/600" alt="Travel bags" width="800" height="600" loading="lazy">
+            <div class="category-copy">
+              <div class="category-index">04</div>
+              <h3>Travel bags</h3>
+              <p>Roomy options for short journeys, busy routines, and all-in-one packing solutions.</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="https://picsum.photos/seed/wallets/800/600" alt="Wallet" width="800" height="600" loading="lazy">
+            <div class="category-copy">
+              <div class="category-index">05</div>
+              <h3>Wallet</h3>
+              <p>Small-format elegance with practical storage and everyday convenience.</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="https://picsum.photos/seed/signature-styles/800/600" alt="Signature styles" width="800" height="600" loading="lazy">
+            <div class="category-copy">
+              <div class="category-index">06</div>
+              <h3>Signature styles</h3>
+              <p>Hero products that define your brand image and leave a memorable style statement.</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer class="footer-minimal">
-        <p>&copy; 2026 Bags Beyond Choice | Follow us on Instagram for updates.</p>
-    </footer>
+    <section class="signature" id="signature">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="script">Brand story</div>
+            <h2>Our story</h2>
+          </div>
+          <p></p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="signature-grid">
+          <div class="panel">
+            <h3>What defines us</h3>
+            <p>We create handmade bags that blend tradition, durability, and affordability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="script">Social touch</div>
+            <h2>Instagram picks</h2>
+          </div>
+          <p>Join our vibrant community of over 11,000 style enthusiasts and see our heritage-inspired designs in action. Follow us for daily styling tips, behind-the-scenes craft, and real-time updates on our latest handmade collections!</p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <img src="https://picsum.photos/seed/insta-laptop-collection/700/700" alt="Instagram laptop bags placeholder" width="700" height="700" loading="lazy">
+            <div class="gallery-copy">
+              <h3>Work edit</h3>
+              <p>Use this for a polished laptop bag or office carry product feature from your page.</p>
+              <a href="https://www.instagram.com/bagsbeyondchoice/" target="_blank" rel="noopener noreferrer">Open Instagram</a>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="https://picsum.photos/seed/insta-style-collection/700/700" alt="Instagram style bags placeholder" width="700" height="700" loading="lazy">
+            <div class="gallery-copy">
+              <h3>Style drop</h3>
+              <p>Use this for a tote, mini bag, or signature collection highlight post.</p>
+              <a href="https://www.instagram.com/bagsbeyondchoice/" target="_blank" rel="noopener noreferrer">Open Instagram</a>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <img src="https://picsum.photos/seed/insta-travel-collection/700/700" alt="Instagram travel bags placeholder" width="700" height="700" loading="lazy">
+            <div class="gallery-copy">
+              <h3>Journey edit</h3>
+              <p>Use this for a travel bag campaign, customer feature, or collection launch cover.</p>
+              <a href="https://www.instagram.com/bagsbeyondchoice/" target="_blank" rel="noopener noreferrer">Open Instagram</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup">
+      <div class="container">
+        <div class="signup-banner">
+          <div>
+            <div class="script">Stay connected</div>
+            <h2>Sign up for new arrivals</h2>
+            <p>Enter your details for early access to new arrivals and offers.</p>
+          </div>
+          <form class="inline-form">
+            <label class="sr-only" for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name">
+            <label class="sr-only" for="phone">Contact number</label>
+            <input id="phone" type="tel" placeholder="Contact number">
+            <button type="button" class="btn btn-primary" data-open-signup>Join</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="popup-backdrop" hidden></div>
+  <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title" hidden>
+    <button class="popup-close" type="button" aria-label="Close popup" data-close-signup>&times;</button>
+    <h2 id="popup-title">Sign up</h2>
+    <p>Share your email and contact number to receive collection updates and special offers.</p>
+    <form class="popup-form">
+      <label for="popup-email">Email</label>
+      <input id="popup-email" type="email" placeholder="Enter your email">
+      <label for="popup-contact">Contact number</label>
+      <input id="popup-contact" type="tel" placeholder="Enter your contact number">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
