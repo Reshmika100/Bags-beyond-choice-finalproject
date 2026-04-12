@@ -1,23 +1,24 @@
-// Show Popup after 3 seconds
+// Trigger popup after 2.5 seconds
 window.onload = function() {
     setTimeout(function() {
-        document.getElementById('newsletter-popup').style.display = 'block';
-    }, 3000);
+        document.getElementById('signup-popup').style.display = 'block';
+    }, 2500);
 };
 
 function closePopup() {
-    document.getElementById('newsletter-popup').style.display = 'none';
+    document.getElementById('signup-popup').style.display = 'none';
 }
 
-// Handle Form Submissions
-document.getElementById('popup-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you! Your 10% discount code: ETHNICBAG10');
-    closePopup();
-});
+// Close if clicked outside
+window.onclick = function(event) {
+    let modal = document.getElementById('signup-popup');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
-document.getElementById('contact-form').addEventListener('submit', function(e) {
+document.getElementById('popup-form').onsubmit = function(e) {
     e.preventDefault();
-    alert('Thank you for reaching out! Bags Beyond Choice will contact you soon.');
-    this.reset();
-});
+    alert("Welcome! Check your email for a 10% discount.");
+    closePopup();
+};
